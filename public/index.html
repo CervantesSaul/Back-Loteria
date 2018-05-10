@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sockets ejemplo</title>
+	<script src="./socket.io/socket.io.js"></script>
+	<!--<script src="../node_modules\socket.io-client\dist/socket.io.js"></script>-->
+  	<script src="main.js"></script>
+</head>
+<body>
+	 <div id="sala">
+	 </div>
+	 <h1>Ejemplo CHAT</h1>
+	 <div id="messages">
+	 </div>
+	 <br>
+	 <form onSubmit="return addMessage(this)">
+	 	<input type="text" id="username" placeholder="Nombre de usuario">
+	 	<input type="text" id="texto" placeholder="Escribe aqui tu mensaje..">
+	 	<input type="submit" value="Enviar">
+	 </form>
+
+	 <input type="submit" value="Centro" onclick="validarCentro()">
+	 <input type="submit" value="Chorro" onclick="validarChorro()">
+	 <input type="submit" value="Llenas" onclick="validarLlenas()">
+	 <input type="submit" value="Esquinas" onclick="validarEsquinas()">
+	 <input type="submit" value="NumRandom" onclick="random()">
+	 <input type="submit" value="Desconectar" onclick="Desconectar()">
+	 <input type="submit" value="Salas" onclick="salas()">
+	 <input type="submit" value="IniciarJuego" onclick="Jugar()">
+	 <input type="submit" value="AgregarCartaSelect" onclick="AgregarCartaSelect()">
+	 <input type="submit" value="RetornarCartas" onclick="RetornarCartas()">
+
+</body>
+</html>
